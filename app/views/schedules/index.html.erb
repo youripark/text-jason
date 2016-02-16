@@ -1,0 +1,35 @@
+<h1>Text Jason a Reminder!</h1>
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
+<%= form_for :schedule, url: schedules_path do |f| %>
+  <p>
+    <%= f.label :date %><br>
+    <%= f.date_field :date %>
+  </p>
+
+  <p>
+    <%= f.label :time %><br>
+    <%= f.time_field :time %>
+  </p>
+
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_field :text %>
+  </p>
+
+  <p>
+    <%= f.label :recipient %><br>
+    <%= f.text_field :recipient %>
+  </p>
+
+  <p>
+    <%= f.label :passcode %><br>
+    <%= f.text_field :passcode %>
+  </p>
+
+  <p>
+    <%= f.submit "Text Jason!"%>
+  </p>
+<% end %>
