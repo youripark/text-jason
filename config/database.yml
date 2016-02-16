@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: textJason_production
-  username: textJason
-  password: <%= ENV['TEXTJASON_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
