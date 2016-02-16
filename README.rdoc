@@ -1,28 +1,6 @@
-== README
+== Text Jason App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+A simple webapp using the Twilio API to schedule text messages for my roommate Jason. This app was created because of the many times I forgot to remind Jason to do something after he asked me to remind him. I thought it would be easier just to build an app for him instead of remembering to remind him about things.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+You can find a running instance of this app here: https://text-jason.herokuapp.com
